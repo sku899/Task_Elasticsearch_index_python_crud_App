@@ -171,3 +171,28 @@ it can be run by
 
 ## 4.Link to CI-CD ##
 
+The CI-CD Pipeline can be built by the Jenkinsfile as below, 
+
+pipeline {
+    agent any 
+    stages{
+        stage("Test-Application"){
+            steps{
+                sh './jenkins/test.sh'
+            }
+        }
+        
+        
+        
+        stage("Build-Images"){
+            steps{
+                sh './jenkins/build-images.sh'
+            }
+        }
+        
+        
+        stage("Deploy-Services"){
+            steps{
+                sh './jenkins/deploy.sh'
+            }
+        }  
