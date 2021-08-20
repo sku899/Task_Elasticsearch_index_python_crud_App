@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Manage Documents</title>
+    </head>
+    <body>
+        <h1>Manage the Documents</h1>
+        <div class='form'>
+            <form method='POST' action=''>
+                <!--The hidden tag here is necessary for CSRF protection (always include in forms)-->
+                {{ form.hidden_tag() }}
+
+
+                <table style="width:45%">
+                    <!-- <col style="width:10%">
+                    <col style="width:8%"> <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td> 
+                </tr>
+                    <col style="width:15%">
+                    <col style="color:red;"> -->
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td> 
+                    </tr>
+    
+                    <td style="text-align:right"><span style="color:chocolate" >{{ form.es_index.label }}</span></td>
+                    <td> {{ form.es_index }}</td>
+                    <td>{{ form.go }} {{ form.delete }}</td>
+                    </tr>
+                <tr>
+                <td style="text-align:right"><span style="color:brown" >{{ form.new_index.label }}</span></td>
+                <td >{{ form.new_index }}</td>
+                <td><span>{{ form.create }}</span></td>
+                </tr>
+                <tr>
+                <td colspan="3"><span style="color:darkgoldenrod" >{{message_index}}</span></td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td> 
+                </tr>
+                
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td> 
+                </tr>
+                <tr>
+                    <td colspan="3"><span style="color:coral") >{{message_create_index}}</td>
+                    </tr>
+                <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td> 
+                </tr>
+
+                
+                <tr>
+                <td style="text-align:right">{{ form.documents.label }}</td>
+                <td>{{ form.documents }}</td>
+                <td>{{ form.delete_document }} </td>
+                </tr>
+                
+                <tr>
+                <td style="text-align:right"><span style="color:magenta" >{{ form.new_fid.label }}</td>
+                <td>{{ form.new_fid}}</td>
+                <td> <span>{{ form.add_document }}</span></td>
+                </tr>
+                <tr>
+                <td style="text-align:right"><span style="color:darkorange" >{{ form.new_location.label }}</span></td>
+                <td><span style="color:blue" >{{ form.new_location}}</span> </td>
+                <td>&nbsp;</td>
+                </tr>
+                <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td> 
+                    </tr>
+                <tr>
+                <td colspan="3"> <span style="color:darkmagenta" >{{message_document}}</span></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+<body>
+</html>
