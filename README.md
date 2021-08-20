@@ -173,6 +173,7 @@ it can be run by
 
 The CI-CD Pipeline can be built by the Jenkinsfile as below, 
 
+
 pipeline {
     agent any 
     stages{
@@ -181,7 +182,6 @@ pipeline {
                 sh './jenkins/test.sh'
             }
         }
-        
         
         
         stage("Build-Images"){
