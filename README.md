@@ -177,20 +177,20 @@ The CI-CD Pipeline can be built by the Jenkinsfile as below,
     pipeline {
         agent any 
         stages{
-            stage("Test-Application"){
+            stage("Test"){
                 steps{
-                    sh './jenkins/test.sh'
+                    sh './scripts/test.sh'
                 }
             }
         
             stage("Build-Images"){
                 steps{
-                    sh './jenkins/build-images.sh'
+                    sh './scripts/build-images.sh'
                 }
             }
                 
-            stage("Deploy-Services"){
+            stage("Deploy"){
                 steps{
-                    sh './jenkins/deploy.sh'
+                    sh './scripts/deploy.sh'
                }
            }  
