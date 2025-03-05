@@ -1,4 +1,4 @@
-# Elasticsearch_index_python_crud_App #
+# Elasticsearch Index Python CRUD App #
 ### By Sabina Ku ###
 
 This task is to develop a CRUD application, which will allow the users to read and modify files on disk.
