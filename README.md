@@ -162,11 +162,11 @@ The docker image of this app is built by this Dockerfile as shown,
 
 This image can be pull by
 
-`docker pull sabinaku/optibrium_task:v2`
+`docker pull filesabinaku/<filename> `
 
 it can be run by
 
-`docker run -d -p 5000:5000 sabinaku/optibrium_technical_task:v2`  
+`docker run -d -p 5000:5000 sabinaku/<filename> 
 
 
 ## 4.Link to CI-CD ##
